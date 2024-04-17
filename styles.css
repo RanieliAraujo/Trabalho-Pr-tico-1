@@ -1,0 +1,123 @@
+.blue-icon {
+    color: blue;
+    font-size: 1.7rem;
+}
+
+.Star{
+    font-size: 1.5rem;
+} 
+
+.custom-gray {
+    background-color: #C3C3C3; 
+}
+
+
+.social-icon {
+    font-size: 2.0rem; 
+}
+
+
+.carousel__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel__slide img {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel__activator {
+    display: none;
+}
+
+.carousel__track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel__slide {
+    flex: 0 0 100%;
+}
+
+.carousel__slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel__indicators {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.carousel__indicator {
+    display: inline-block;
+    width: 25px;
+    height:25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel__activator:checked + .carousel__track {
+    transform: translateX(-100%);
+}
+
+#slide2:checked ~ .carousel__track {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel__track {
+    transform: translateX(-200%);
+}
+#slide4:checked ~ .carousel__track {
+    transform: translateX(-300%);
+}
+#slide5:checked ~ .carousel__track {
+    transform: translateX(-400%);
+}
+
+#slide1:checked ~ .carousel__indicators > .carousel__indicator:nth-child(1),
+#slide2:checked ~ .carousel__indicators > .carousel__indicator:nth-child(2),
+#slide3:checked ~ .carousel__indicators > .carousel__indicator:nth-child(3),
+#slide4:checked ~ .carousel__indicators > .carousel__indicator:nth-child(4),
+#slide5:checked ~ .carousel__indicators > .carousel__indicator:nth-child(5) {
+    background-color: #888;
+}
+
+
+.image-container {
+    text-align: center;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+}
+.person {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.name {
+    margin-top: 5px; 
+}
+.clickable-column {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
